@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'extensions.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -11,7 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -86,7 +87,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'You have pushed the button this many times:'
+                  .toFirstLatterCapital(),
             ),
             Text(
               '$_counter',
