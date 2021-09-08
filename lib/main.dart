@@ -1,3 +1,4 @@
+import 'package:dart_test/single.dart';
 import 'package:flutter/material.dart';
 
 import 'extensions.dart';
@@ -52,6 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  final Single single = Single.init;
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -91,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   .toFirstLatterCapital(),
             ),
             Text(
-              '$_counter',
+              '${single.test}',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
